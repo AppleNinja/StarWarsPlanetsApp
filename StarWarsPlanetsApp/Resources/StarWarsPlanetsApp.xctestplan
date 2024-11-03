@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "id" : "E10EA0D6-2F9C-4D61-959D-8AACBD8D1520",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "--uitesting"
+      }
+    ],
+    "environmentVariableEntries" : [
+      {
+        "key" : "UITESTING",
+        "value" : "1"
+      }
+    ]
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:StarWarsPlanetsApp.xcodeproj",
+        "identifier" : "B8E3CB572CD3AE9500B278DE",
+        "name" : "StarWarsPlanetsAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

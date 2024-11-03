@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B86AAA692CD767B900A5FFE3 /* CoreDataStackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86AAA682CD767B900A5FFE3 /* CoreDataStackTests.swift */; };
+		B86AAA6B2CD7689300A5FFE3 /* PlanetLocalDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86AAA6A2CD7689300A5FFE3 /* PlanetLocalDataSourceTests.swift */; };
+		B86AAA6D2CD76E4200A5FFE3 /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86AAA6C2CD76E4200A5FFE3 /* PlanetDetailView.swift */; };
+		B86AAA712CD76F4B00A5FFE3 /* PlanetResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86AAA702CD76F4B00A5FFE3 /* PlanetResponseDTO.swift */; };
+		B86AAA732CD7714B00A5FFE3 /* PlanetListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86AAA722CD7714B00A5FFE3 /* PlanetListViewModelTests.swift */; };
+		B8E3CB4B2CD3AE9400B278DE /* StarWarsPlanetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB4A2CD3AE9400B278DE /* StarWarsPlanetsApp.swift */; };
+		B8E3CB4F2CD3AE9500B278DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E3CB4E2CD3AE9500B278DE /* Assets.xcassets */; };
+		B8E3CB532CD3AE9500B278DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E3CB522CD3AE9500B278DE /* Preview Assets.xcassets */; };
+		B8E3CB782CD3AF2900B278DE /* PlanetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB772CD3AF2900B278DE /* PlanetListView.swift */; };
+		B8E3CB7A2CD3AF3A00B278DE /* PlanetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB792CD3AF3A00B278DE /* PlanetRowView.swift */; };
+		B8E3CB7D2CD3AF7E00B278DE /* PlanetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB7C2CD3AF7E00B278DE /* PlanetListViewModel.swift */; };
+		B8E3CB822CD3AFDA00B278DE /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB812CD3AFDA00B278DE /* Planet.swift */; };
+		B8E3CB842CD3AFF100B278DE /* FetchPlanetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB832CD3AFF100B278DE /* FetchPlanetsUseCase.swift */; };
+		B8E3CB8C2CD40B3B00B278DE /* PlanetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB8B2CD40B3B00B278DE /* PlanetRepository.swift */; };
+		B8E3CB8E2CD40B4B00B278DE /* PlanetRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB8D2CD40B4B00B278DE /* PlanetRemoteDataSource.swift */; };
+		B8E3CB902CD40B5900B278DE /* PlanetLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB8F2CD40B5900B278DE /* PlanetLocalDataSource.swift */; };
+		B8E3CB922CD40B6600B278DE /* PlanetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB912CD40B6600B278DE /* PlanetMapper.swift */; };
+		B8E3CB962CD40CC300B278DE /* FetchPlanetsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB952CD40CC300B278DE /* FetchPlanetsUseCaseTests.swift */; };
+		B8E3CB992CD40CDB00B278DE /* PlanetRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB982CD40CDB00B278DE /* PlanetRepositoryTests.swift */; };
+		B8E3CBA02CD4114C00B278DE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CB9F2CD4114C00B278DE /* CoreDataStack.swift */; };
+		B8E3CBA32CD6B6B400B278DE /* StarWarsPlanets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBA12CD6B6B400B278DE /* StarWarsPlanets.xcdatamodeld */; };
+		B8E3CBA52CD6B7C900B278DE /* MockPlanetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBA42CD6B7C900B278DE /* MockPlanetRepository.swift */; };
+		B8E3CBA72CD6B83600B278DE /* MockPlanetRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBA62CD6B83600B278DE /* MockPlanetRemoteDataSource.swift */; };
+		B8E3CBAB2CD6B91300B278DE /* MockFetchPlanetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBAA2CD6B91300B278DE /* MockFetchPlanetsUseCase.swift */; };
+		B8E3CBB12CD6BD8B00B278DE /* MockUITestingPlanetRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBAF2CD6BD8B00B278DE /* MockUITestingPlanetRemoteDataSource.swift */; };
+		B8E3CBB22CD6BD8B00B278DE /* MockPlanetLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBB02CD6BD8B00B278DE /* MockPlanetLocalDataSource.swift */; };
+		B8E3CBB62CD6C12100B278DE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3CBB52CD6C12100B278DE /* RootView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8E3CB592CD3AE9500B278DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8E3CB3F2CD3AE9400B278DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E3CB462CD3AE9400B278DE;
+			remoteInfo = StarWarsPlanetsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B86AAA682CD767B900A5FFE3 /* CoreDataStackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackTests.swift; sourceTree = "<group>"; };
+		B86AAA6A2CD7689300A5FFE3 /* PlanetLocalDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLocalDataSourceTests.swift; sourceTree = "<group>"; };
+		B86AAA6C2CD76E4200A5FFE3 /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
+		B86AAA702CD76F4B00A5FFE3 /* PlanetResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetResponseDTO.swift; sourceTree = "<group>"; };
+		B86AAA722CD7714B00A5FFE3 /* PlanetListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewModelTests.swift; sourceTree = "<group>"; };
+		B8E3CB472CD3AE9400B278DE /* StarWarsPlanetsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsPlanetsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E3CB4A2CD3AE9400B278DE /* StarWarsPlanetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsPlanetsApp.swift; sourceTree = "<group>"; };
+		B8E3CB4E2CD3AE9500B278DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8E3CB502CD3AE9500B278DE /* StarWarsPlanetsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarWarsPlanetsApp.entitlements; sourceTree = "<group>"; };
+		B8E3CB522CD3AE9500B278DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8E3CB582CD3AE9500B278DE /* StarWarsPlanetsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsPlanetsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E3CB772CD3AF2900B278DE /* PlanetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListView.swift; sourceTree = "<group>"; };
+		B8E3CB792CD3AF3A00B278DE /* PlanetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRowView.swift; sourceTree = "<group>"; };
+		B8E3CB7C2CD3AF7E00B278DE /* PlanetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewModel.swift; sourceTree = "<group>"; };
+		B8E3CB812CD3AFDA00B278DE /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		B8E3CB832CD3AFF100B278DE /* FetchPlanetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPlanetsUseCase.swift; sourceTree = "<group>"; };
+		B8E3CB8B2CD40B3B00B278DE /* PlanetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRepository.swift; sourceTree = "<group>"; };
+		B8E3CB8D2CD40B4B00B278DE /* PlanetRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRemoteDataSource.swift; sourceTree = "<group>"; };
+		B8E3CB8F2CD40B5900B278DE /* PlanetLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLocalDataSource.swift; sourceTree = "<group>"; };
+		B8E3CB912CD40B6600B278DE /* PlanetMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetMapper.swift; sourceTree = "<group>"; };
+		B8E3CB952CD40CC300B278DE /* FetchPlanetsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPlanetsUseCaseTests.swift; sourceTree = "<group>"; };
+		B8E3CB982CD40CDB00B278DE /* PlanetRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRepositoryTests.swift; sourceTree = "<group>"; };
+		B8E3CB9F2CD4114C00B278DE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B8E3CBA22CD6B6B400B278DE /* StarWarsPlanets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWarsPlanets.xcdatamodel; sourceTree = "<group>"; };
+		B8E3CBA42CD6B7C900B278DE /* MockPlanetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlanetRepository.swift; sourceTree = "<group>"; };
+		B8E3CBA62CD6B83600B278DE /* MockPlanetRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPlanetRemoteDataSource.swift; sourceTree = "<group>"; };
+		B8E3CBAA2CD6B91300B278DE /* MockFetchPlanetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchPlanetsUseCase.swift; sourceTree = "<group>"; };
+		B8E3CBAF2CD6BD8B00B278DE /* MockUITestingPlanetRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUITestingPlanetRemoteDataSource.swift; sourceTree = "<group>"; };
+		B8E3CBB02CD6BD8B00B278DE /* MockPlanetLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPlanetLocalDataSource.swift; sourceTree = "<group>"; };
+		B8E3CBB42CD6BFBF00B278DE /* StarWarsPlanetsApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = StarWarsPlanetsApp.xctestplan; sourceTree = "<group>"; };
+		B8E3CBB52CD6C12100B278DE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8E3CB442CD3AE9400B278DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E3CB552CD3AE9500B278DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B86AAA6E2CD76F2200A5FFE3 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B86AAA702CD76F4B00A5FFE3 /* PlanetResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		B86AAA6F2CD76F2A00A5FFE3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB8D2CD40B4B00B278DE /* PlanetRemoteDataSource.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B8E3CB3E2CD3AE9400B278DE = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB492CD3AE9400B278DE /* StarWarsPlanetsApp */,
+				B8E3CB5B2CD3AE9500B278DE /* StarWarsPlanetsAppTests */,
+				B8E3CB482CD3AE9400B278DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8E3CB482CD3AE9400B278DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB472CD3AE9400B278DE /* StarWarsPlanetsApp.app */,
+				B8E3CB582CD3AE9500B278DE /* StarWarsPlanetsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8E3CB492CD3AE9400B278DE /* StarWarsPlanetsApp */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB9D2CD40EC900B278DE /* App */,
+				B8E3CB752CD3AEE700B278DE /* Presentation */,
+				B8E3CB7E2CD3AF9200B278DE /* Domain */,
+				B8E3CB852CD40A3900B278DE /* Data */,
+				B8E3CB932CD40C7700B278DE /* Resources */,
+				B8E3CBAE2CD6BC8500B278DE /* Mocks */,
+				B8E3CB502CD3AE9500B278DE /* StarWarsPlanetsApp.entitlements */,
+				B8E3CB512CD3AE9500B278DE /* Preview Content */,
+			);
+			path = StarWarsPlanetsApp;
+			sourceTree = "<group>";
+		};
+		B8E3CB512CD3AE9500B278DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB522CD3AE9500B278DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8E3CB5B2CD3AE9500B278DE /* StarWarsPlanetsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB942CD40CA900B278DE /* DomainTests */,
+				B8E3CB972CD40CC900B278DE /* DataTests */,
+				B8E3CB9A2CD40CE600B278DE /* PresentationTests */,
+			);
+			path = StarWarsPlanetsAppTests;
+			sourceTree = "<group>";
+		};
+		B8E3CB752CD3AEE700B278DE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB7B2CD3AF4A00B278DE /* ViewModels */,
+				B8E3CB762CD3AF0700B278DE /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B8E3CB762CD3AF0700B278DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB772CD3AF2900B278DE /* PlanetListView.swift */,
+				B86AAA6C2CD76E4200A5FFE3 /* PlanetDetailView.swift */,
+				B8E3CB792CD3AF3A00B278DE /* PlanetRowView.swift */,
+				B8E3CBB52CD6C12100B278DE /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8E3CB7B2CD3AF4A00B278DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB7C2CD3AF7E00B278DE /* PlanetListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B8E3CB7E2CD3AF9200B278DE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB802CD3AFB600B278DE /* UseCases */,
+				B8E3CB7F2CD3AFA400B278DE /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B8E3CB7F2CD3AFA400B278DE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB812CD3AFDA00B278DE /* Planet.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B8E3CB802CD3AFB600B278DE /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB832CD3AFF100B278DE /* FetchPlanetsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B8E3CB852CD40A3900B278DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB9E2CD4112200B278DE /* CoreData */,
+				B8E3CB862CD40A4700B278DE /* Repositories */,
+				B8E3CB872CD40A5D00B278DE /* DataSources */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B8E3CB862CD40A4700B278DE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB8B2CD40B3B00B278DE /* PlanetRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B8E3CB872CD40A5D00B278DE /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB882CD40A7500B278DE /* Remote */,
+				B8E3CB892CD40A8000B278DE /* Local */,
+				B8E3CB8A2CD40B0B00B278DE /* Mappers */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		B8E3CB882CD40A7500B278DE /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				B86AAA6F2CD76F2A00A5FFE3 /* Services */,
+				B86AAA6E2CD76F2200A5FFE3 /* DTO */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		B8E3CB892CD40A8000B278DE /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB8F2CD40B5900B278DE /* PlanetLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		B8E3CB8A2CD40B0B00B278DE /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB912CD40B6600B278DE /* PlanetMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		B8E3CB932CD40C7700B278DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CBB42CD6BFBF00B278DE /* StarWarsPlanetsApp.xctestplan */,
+				B8E3CB4E2CD3AE9500B278DE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8E3CB942CD40CA900B278DE /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB952CD40CC300B278DE /* FetchPlanetsUseCaseTests.swift */,
+				B8E3CBAA2CD6B91300B278DE /* MockFetchPlanetsUseCase.swift */,
+				B8E3CBA42CD6B7C900B278DE /* MockPlanetRepository.swift */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		B8E3CB972CD40CC900B278DE /* DataTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB982CD40CDB00B278DE /* PlanetRepositoryTests.swift */,
+				B8E3CBA62CD6B83600B278DE /* MockPlanetRemoteDataSource.swift */,
+				B86AAA682CD767B900A5FFE3 /* CoreDataStackTests.swift */,
+				B86AAA6A2CD7689300A5FFE3 /* PlanetLocalDataSourceTests.swift */,
+			);
+			path = DataTests;
+			sourceTree = "<group>";
+		};
+		B8E3CB9A2CD40CE600B278DE /* PresentationTests */ = {
+			isa = PBXGroup;
+			children = (
+				B86AAA722CD7714B00A5FFE3 /* PlanetListViewModelTests.swift */,
+			);
+			path = PresentationTests;
+			sourceTree = "<group>";
+		};
+		B8E3CB9D2CD40EC900B278DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB4A2CD3AE9400B278DE /* StarWarsPlanetsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B8E3CB9E2CD4112200B278DE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CB9F2CD4114C00B278DE /* CoreDataStack.swift */,
+				B8E3CBA12CD6B6B400B278DE /* StarWarsPlanets.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B8E3CBAE2CD6BC8500B278DE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CBB02CD6BD8B00B278DE /* MockPlanetLocalDataSource.swift */,
+				B8E3CBAF2CD6BD8B00B278DE /* MockUITestingPlanetRemoteDataSource.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8E3CB462CD3AE9400B278DE /* StarWarsPlanetsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E3CB6C2CD3AE9500B278DE /* Build configuration list for PBXNativeTarget "StarWarsPlanetsApp" */;
+			buildPhases = (
+				B8E3CB432CD3AE9400B278DE /* Sources */,
+				B8E3CB442CD3AE9400B278DE /* Frameworks */,
+				B8E3CB452CD3AE9400B278DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsPlanetsApp;
+			productName = StarWarsPlanetsApp;
+			productReference = B8E3CB472CD3AE9400B278DE /* StarWarsPlanetsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8E3CB572CD3AE9500B278DE /* StarWarsPlanetsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E3CB6F2CD3AE9500B278DE /* Build configuration list for PBXNativeTarget "StarWarsPlanetsAppTests" */;
+			buildPhases = (
+				B8E3CB542CD3AE9500B278DE /* Sources */,
+				B8E3CB552CD3AE9500B278DE /* Frameworks */,
+				B8E3CB562CD3AE9500B278DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8E3CB5A2CD3AE9500B278DE /* PBXTargetDependency */,
+			);
+			name = StarWarsPlanetsAppTests;
+			productName = StarWarsPlanetsAppTests;
+			productReference = B8E3CB582CD3AE9500B278DE /* StarWarsPlanetsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8E3CB3F2CD3AE9400B278DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B8E3CB462CD3AE9400B278DE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B8E3CB572CD3AE9500B278DE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B8E3CB462CD3AE9400B278DE;
+					};
+				};
+			};
+			buildConfigurationList = B8E3CB422CD3AE9400B278DE /* Build configuration list for PBXProject "StarWarsPlanetsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8E3CB3E2CD3AE9400B278DE;
+			productRefGroup = B8E3CB482CD3AE9400B278DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8E3CB462CD3AE9400B278DE /* StarWarsPlanetsApp */,
+				B8E3CB572CD3AE9500B278DE /* StarWarsPlanetsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8E3CB452CD3AE9400B278DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E3CB532CD3AE9500B278DE /* Preview Assets.xcassets in Resources */,
+				B8E3CB4F2CD3AE9500B278DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E3CB562CD3AE9500B278DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8E3CB432CD3AE9400B278DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86AAA712CD76F4B00A5FFE3 /* PlanetResponseDTO.swift in Sources */,
+				B8E3CB902CD40B5900B278DE /* PlanetLocalDataSource.swift in Sources */,
+				B8E3CB7D2CD3AF7E00B278DE /* PlanetListViewModel.swift in Sources */,
+				B8E3CBA02CD4114C00B278DE /* CoreDataStack.swift in Sources */,
+				B8E3CBA32CD6B6B400B278DE /* StarWarsPlanets.xcdatamodeld in Sources */,
+				B8E3CB922CD40B6600B278DE /* PlanetMapper.swift in Sources */,
+				B8E3CB7A2CD3AF3A00B278DE /* PlanetRowView.swift in Sources */,
+				B8E3CB822CD3AFDA00B278DE /* Planet.swift in Sources */,
+				B8E3CBB62CD6C12100B278DE /* RootView.swift in Sources */,
+				B8E3CBB22CD6BD8B00B278DE /* MockPlanetLocalDataSource.swift in Sources */,
+				B8E3CB4B2CD3AE9400B278DE /* StarWarsPlanetsApp.swift in Sources */,
+				B8E3CB8C2CD40B3B00B278DE /* PlanetRepository.swift in Sources */,
+				B86AAA6D2CD76E4200A5FFE3 /* PlanetDetailView.swift in Sources */,
+				B8E3CB842CD3AFF100B278DE /* FetchPlanetsUseCase.swift in Sources */,
+				B8E3CBB12CD6BD8B00B278DE /* MockUITestingPlanetRemoteDataSource.swift in Sources */,
+				B8E3CB8E2CD40B4B00B278DE /* PlanetRemoteDataSource.swift in Sources */,
+				B8E3CB782CD3AF2900B278DE /* PlanetListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E3CB542CD3AE9500B278DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86AAA732CD7714B00A5FFE3 /* PlanetListViewModelTests.swift in Sources */,
+				B8E3CBA72CD6B83600B278DE /* MockPlanetRemoteDataSource.swift in Sources */,
+				B8E3CB992CD40CDB00B278DE /* PlanetRepositoryTests.swift in Sources */,
+				B8E3CBAB2CD6B91300B278DE /* MockFetchPlanetsUseCase.swift in Sources */,
+				B8E3CB962CD40CC300B278DE /* FetchPlanetsUseCaseTests.swift in Sources */,
+				B86AAA6B2CD7689300A5FFE3 /* PlanetLocalDataSourceTests.swift in Sources */,
+				B8E3CBA52CD6B7C900B278DE /* MockPlanetRepository.swift in Sources */,
+				B86AAA692CD767B900A5FFE3 /* CoreDataStackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8E3CB5A2CD3AE9500B278DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8E3CB462CD3AE9400B278DE /* StarWarsPlanetsApp */;
+			targetProxy = B8E3CB592CD3AE9500B278DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B8E3CB6A2CD3AE9500B278DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8E3CB6B2CD3AE9500B278DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B8E3CB6D2CD3AE9500B278DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StarWarsPlanetsApp/StarWarsPlanetsApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StarWarsPlanetsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4886TH5BAS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arctech.StarWarsPlanetsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited) UITESTING";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8E3CB6E2CD3AE9500B278DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StarWarsPlanetsApp/StarWarsPlanetsApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StarWarsPlanetsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4886TH5BAS;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arctech.StarWarsPlanetsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8E3CB702CD3AE9500B278DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4886TH5BAS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arctech.StarWarsPlanetsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsPlanetsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsPlanetsApp";
+			};
+			name = Debug;
+		};
+		B8E3CB712CD3AE9500B278DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4886TH5BAS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arctech.StarWarsPlanetsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWarsPlanetsApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StarWarsPlanetsApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8E3CB422CD3AE9400B278DE /* Build configuration list for PBXProject "StarWarsPlanetsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E3CB6A2CD3AE9500B278DE /* Debug */,
+				B8E3CB6B2CD3AE9500B278DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E3CB6C2CD3AE9500B278DE /* Build configuration list for PBXNativeTarget "StarWarsPlanetsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E3CB6D2CD3AE9500B278DE /* Debug */,
+				B8E3CB6E2CD3AE9500B278DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E3CB6F2CD3AE9500B278DE /* Build configuration list for PBXNativeTarget "StarWarsPlanetsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E3CB702CD3AE9500B278DE /* Debug */,
+				B8E3CB712CD3AE9500B278DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8E3CBA12CD6B6B400B278DE /* StarWarsPlanets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8E3CBA22CD6B6B400B278DE /* StarWarsPlanets.xcdatamodel */,
+			);
+			currentVersion = B8E3CBA22CD6B6B400B278DE /* StarWarsPlanets.xcdatamodel */;
+			name = StarWarsPlanets.xcdatamodeld;
+			path = /Users/sreekumar/Desktop/StarWarsPlanetsApp/StarWarsPlanetsApp/Data/CoreData/StarWarsPlanets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B8E3CB3F2CD3AE9400B278DE /* Project object */;
+}
